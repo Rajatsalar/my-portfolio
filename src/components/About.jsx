@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-// import aboutImg from "../assets/about-me.jpg";  // Image for the section
+import aboutImg from "../assets/about-me.webp";  // Image for the section
 
 const About = () => {
   return (
@@ -11,9 +11,9 @@ const About = () => {
           <div className="about-content">
             
             {/* Image Container */}
-            {/* <div className="about-image-container">
+            <div className="about-image-container">
               <img src={aboutImg} alt="About Me" className="about-image" />
-            </div> */}
+            </div>
 
             {/* Text Container */}
             <div className="about-text">
