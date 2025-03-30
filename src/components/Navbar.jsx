@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link as ScrollLink } from "react-scroll";  // Import react-scroll
-import "./NavBar.css";
+import "./Navbar.css";
 import ContactMe from "./Contact";
 
 const NavBar = () => {
