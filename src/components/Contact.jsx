@@ -1,86 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
+import { Modal, Button, Form } from "react-bootstrap";
 import "./Contact.css";
-import { Container, Form, Button, Card } from "react-bootstrap";
 
-const ContactMe = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Submitted:", formData);
-    alert("Message Sent Successfully!");
-  };
-
+const ContactMe = ({ show, handleClose }) => {
   return (
-    <section id="contact" className="contact-section">
-      <Container className="contact-container">
-        <Card className="contact-card">
-          <Card.Body>
-            <h2 className="section-title">Contact Me</h2>
-            <p className="contact-description">
-              Let's connect! Feel free to reach out using the form below.
-            </p>
-            
-            <Form onSubmit={handleSubmit}>
-              <Form.Group className="mb-4" controlId="formName">
-                <Form.Label>Name</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Your Name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </Form.Group>
+    <Modal show={show} onHide={handleClose} centered>
+      <Modal.Header closeButton>
+        <Modal.Title>Contact Me</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <Form>
+          <Form.Group controlId="formName">
+            <Form.Label>Your Name</Form.Label>
+            <Form.Control type="text" placeholder="Enter your name" />
+          </Form.Group>
 
-              <Form.Group className="mb-4" controlId="formEmail">
-                <Form.Label>Email</Form.Label>
-                <Form.Control
-                  type="email"
-                  placeholder="Your Email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </Form.Group>
+          <Form.Group controlId="formEmail" className="mt-3">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter your email" />
+          </Form.Group>
 
-              <Form.Group className="mb-4" controlId="formMessage">
-                <Form.Label>Message</Form.Label>
-                <Form.Control
-                  as="textarea"
-                  rows={4}
-                  placeholder="Your Message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                />
-              </Form.Group>
+          <Form.Group controlId="formMessage" className="mt-3">
+            <Form.Label>Message</Form.Label>
+            <Form.Control as="textarea" rows={4} placeholder="Your message..." />
+          </Form.Group>
 
-              <div className="btn-container">
-                <Button variant="primary" type="submit" className="btn-send">
-                  Send Message
-                </Button>
-              </div>
-            </Form>
-          </Card.Body>
-        </Card>
-      </Container>
-    </section>
+          <Button variant="primary" className="mt-4 w-100" type="submit">
+            Send Message
+          </Button>
+        </Form>
+      </Modal.Body>
+    </Modal>
   );
 };
 

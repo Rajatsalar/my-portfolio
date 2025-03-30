@@ -1,27 +1,73 @@
-import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
-import "./Navbar.css"; 
+import React, { useState } from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link as ScrollLink } from "react-scroll";  // Import react-scroll
+import "./NavBar.css";
+import ContactMe from "./Contact";
 
-const NavigationBar = () => {
+const NavBar = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
   return (
-    <Navbar expand="lg" className="navbar-custom" fixed="top">
-      <Container>
-        <Navbar.Brand href="#home" className="brand">
-          Rajat's Portfolio
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link href="#home" className="nav-link-white">HOME</Nav.Link>
-            <Nav.Link href="#about" className="nav-link-white">ABOUT ME</Nav.Link>
-            <Nav.Link href="#skills" className="nav-link-white">Skills</Nav.Link>
-            <Nav.Link href="#projects" className="nav-link-white">PROJECTS</Nav.Link>
-            <Nav.Link href="#contact" className="nav-link-white">CONTACT ME</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <>
+      <Navbar expand="lg" className="navbar-custom" fixed="top">
+        <Container>
+          <Navbar.Brand href="#home" className="navbar-brand-text">
+            My Portfolio
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+            <ScrollLink
+                to="home"
+                smooth={true}
+                duration={500}
+                className="nav-link"
+              >
+                HOME
+              </ScrollLink>
+              <ScrollLink
+                to="about"
+                smooth={true}
+                duration={500}
+                className="nav-link"
+              >
+                ABOUT ME
+              </ScrollLink>
+
+              <ScrollLink
+                to="skills"
+                smooth={true}
+                duration={500}
+                className="nav-link"
+              >
+                SKILLS
+              </ScrollLink>
+
+              <ScrollLink
+                to="projects"
+                smooth={true}
+                duration={500}
+                className="nav-link"
+              >
+                PROJECTS
+              </ScrollLink>
+
+              {/* Contact Me Modal */}
+              <Nav.Link onClick={handleShow} className="nav-link contact-link">
+                CONTACT ME
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
+      {/* Modal for ContactMe */}
+      <ContactMe show={showModal} handleClose={handleClose} />
+    </>
   );
 };
 
-export default NavigationBar;
+export default NavBar;

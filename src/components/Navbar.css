@@ -1,49 +1,64 @@
-/* Navbar Container */
+/* Navbar Styles */
 .navbar-custom {
-  background: rgba(0, 0, 0, 0.7);  /* Transparent black background */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease-in-out;
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.8); /* Transparent background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.5s ease;
+  padding: 15px 0;
 }
 
-/* Brand Styling */
-.brand {
+.navbar-brand-text {
   font-size: 1.8rem;
+  color: white !important;
   font-weight: bold;
-  color: #ffffff !important;
   transition: color 0.3s;
 }
 
-.brand:hover {
-  color: #ffdf00 !important;  /* Yellow hover effect */
+.navbar-brand-text:hover {
+  color: #ffd700 !important; /* Yellow hover effect */
 }
 
-/* Navbar Links */
-.nav-link-white {
+/* Navigation Links */
+.nav-link {
   font-size: 1.2rem;
-  font-weight: 500;
-  color: #ffffff !important;   /* White font color */
-  transition: all 0.3s ease;
+  color: white !important;  /* White text */
   margin: 0 15px;
+  transition: color 0.3s, transform 0.3s;
   position: relative;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  text-decoration: none;
 }
 
-/* Hover Effects */
-.nav-link-white:hover {
-  color: #ffdf00 !important;   /* Yellow hover effect */
-  text-shadow: 0 0 8px #ffdf00;  /* Glowing effect */
-  transform: scale(1.1);
+/* Hover Effect with Yellow Glow */
+.nav-link:hover {
+  color: #ffd700 !important;  /* Yellow hover color */
+  transform: translateY(-3px); /* Slight lift effect */
+  cursor: pointer;
 }
 
-/* Navbar Toggle Icon */
-.navbar-toggler {
-  border: none;
-  outline: none;
-  color: #ffffff;
+/* Active Link Effect */
+.nav-link.active {
+  color: #00bcd4 !important;  /* Highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid #00bcd4; /* Active link underline */
 }
 
-.navbar-toggler:focus {
-  box-shadow: none;
+/* Modal Contact Link */
+.contact-link {
+  color: white !important;
+}
+
+.contact-link:hover {
+  color: #ffd700 !important;  /* Yellow hover */
+  transform: scale(1.1); /* Slight scale effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-brand-text {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
 }
