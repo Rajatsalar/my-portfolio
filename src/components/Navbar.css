@@ -1,0 +1,49 @@
+/* Navbar Container */
+.navbar-custom {
+  background: rgba(0, 0, 0, 0.7);  /* Transparent black background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+/* Brand Styling */
+.brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff !important;
+  transition: color 0.3s;
+}
+
+.brand:hover {
+  color: #ffdf00 !important;  /* Yellow hover effect */
+}
+
+/* Navbar Links */
+.nav-link-white {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff !important;   /* White font color */
+  transition: all 0.3s ease;
+  margin: 0 15px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Hover Effects */
+.nav-link-white:hover {
+  color: #ffdf00 !important;   /* Yellow hover effect */
+  text-shadow: 0 0 8px #ffdf00;  /* Glowing effect */
+  transform: scale(1.1);
+}
+
+/* Navbar Toggle Icon */
+.navbar-toggler {
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}

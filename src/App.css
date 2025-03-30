@@ -1,0 +1,32 @@
+/* Global Font Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;  /* Primary Font */
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;  /* Stylish font for headings */
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Body Text */
+  p, a, li, span, button {
+    font-family: "Roboto", sans-serif;  /* Clean font for body */
+    font-weight: 400;
+  }
+  
+  /* Navbar Links */
+  .nav-link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #ff9800;  /* Yellow hover effect */
+  }
+  
