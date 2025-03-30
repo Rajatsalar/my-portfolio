@@ -70,6 +70,7 @@
 }
 
 .about-text p {
+  text-align: justify;
   font-size: 1.1rem;
   margin-bottom: 20px;
   color: #666;
@@ -124,3 +125,78 @@
   color: #333;
   transform: translateY(-5px);
 }
+
+/* ============ Mobile & Tablet Responsiveness ============ */
+
+/* For screens smaller than 1100px */
+@media (max-width: 1100px) {
+  .about-content {
+    flex-direction: column;      /* Stack image and text vertically */
+    text-align: center;          /* Center align content */
+  }
+
+  .about-image-container, 
+  .about-text {
+    width: 100%;                /* Full width content */
+    padding: 20px;              /* Add padding */
+  }
+
+  .about-image {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .about-card {
+    padding: 30px;              /* Reduce padding */
+  }
+}
+
+/* For screens smaller than 768px (Tablet) */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 20px;              /* Smaller padding */
+  }
+
+  .about-text h3 {
+    font-size: 1.8rem;          /* Smaller heading */
+  }
+
+  .about-text p {
+    font-size: 1rem;            /* Adjust paragraph size */
+  }
+
+  .skills-container {
+    justify-content: center;     /* Center align skills */
+  }
+
+  .skill {
+    font-size: 0.9rem;          /* Smaller skill badges */
+    padding: 8px 16px;
+  }
+}
+
+/* For screens smaller than 480px (Mobile) */
+@media (max-width: 480px) {
+  .about-card {
+    padding: 15px;               /* Reduce padding for small screens */
+  }
+
+  .about-text h3 {
+    font-size: 1.5rem;           /* Smaller heading */
+  }
+
+  .about-text p {
+    font-size: 0.9rem;           /* Adjust paragraph font size */
+  }
+
+  .btn {
+    padding: 10px 25px;          /* Smaller button */
+    font-size: 1rem;
+  }
+
+  .skill {
+    padding: 6px 14px;           /* Smaller skills badges */
+    font-size: 0.85rem;
+  }
+}
+
