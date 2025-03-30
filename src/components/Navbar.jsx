@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link as ScrollLink } from "react-scroll";  // Import react-scroll
 import "./Navbar.css";
-import ContactMe from "./Contact";
+import ContactMe from "./ContactMe";
 
 const NavBar = () => {
   const [showModal, setShowModal] = useState(false);

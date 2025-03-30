@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal, Button, Form } from "react-bootstrap";
-import "./Contact.css";
+import "./ContactMe.css";
 
 const ContactMe = ({ show, handleClose }) => {
   return (

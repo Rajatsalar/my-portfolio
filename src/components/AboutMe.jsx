@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "./AboutMe.css";
 import aboutImg from "../assets/about-me.webp";  // Image for the section
 
 const About = () => {
