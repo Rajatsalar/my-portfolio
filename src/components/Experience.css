@@ -1,0 +1,52 @@
+#experience {
+  background: url('../assets/pexels-rostislav-5011647.webp') no-repeat center center/cover;
+  position: relative;
+  padding: 80px 0;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 50px 0;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  padding: 20px;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.2);
+}
+
+.know-more-btn {
+  background: #007bff;
+  border: none;
+  transition: background 0.3s, transform 0.2s;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.know-more-btn:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+.experience-modal .modal-content {
+  border-radius: 15px;
+  padding: 20px;
+  font-weight: 500;
+}

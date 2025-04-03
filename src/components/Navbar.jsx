@@ -47,6 +47,15 @@ const NavBar = () => {
               </ScrollLink>
 
               <ScrollLink
+                to="experience"
+                smooth={true}
+                duration={500}
+                className="nav-link"
+              >
+                EXPERIENCE
+              </ScrollLink>
+
+              <ScrollLink
                 to="projects"
                 smooth={true}
                 duration={500}
