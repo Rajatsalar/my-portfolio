@@ -16,16 +16,16 @@ const experiences = [
       "Created visually appealing layouts using CSS3, including Flexbox, Grid, animations, and media queries for responsive design.",
     ],
   },
-  {
-    id: 2,
-    company: "XYZ Ltd",
-    role: "Full Stack Developer",
-    duration: "Mar 2020 - Dec 2021",
-    projects: [
-      "Built an e-commerce platform",
-      "Integrated payment gateway",
-    ],
-  },
+  // {
+  //   id: 2,
+  //   company: "XYZ Ltd",
+  //   role: "Full Stack Developer",
+  //   duration: "Mar 2020 - Dec 2021",
+  //   projects: [
+  //     "Built an e-commerce platform",
+  //     "Integrated payment gateway",
+  //   ],
+  // },
 ];
 
 const Experience = () => {
