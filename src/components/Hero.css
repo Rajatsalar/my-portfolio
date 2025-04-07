@@ -29,15 +29,16 @@
   color: #00d9ff;
 }
 
-.btn-primary {
-  background: #00d9ff;
+.projects-btn {
+  background: #fd7e14 !important;
   border: none;
+  color: #ffffff !important;
   padding: 12px 25px;
   font-size: 1.2rem;
   transition: 0.3s;
 }
 
-.btn-primary:hover {
-  background: #007bff;
+.projects-btn:hover {
+  background: #fd7e14 !important;
   transform: scale(1.1);
 }

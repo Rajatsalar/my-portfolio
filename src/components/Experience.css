@@ -32,7 +32,7 @@
 }
 
 .know-more-btn {
-  background: #007bff;
+  background: #fd7e14;
   border: none;
   transition: background 0.3s, transform 0.2s;
   font-weight: bold;
@@ -41,7 +41,7 @@
 }
 
 .know-more-btn:hover {
-  background: #0056b3;
+  background: #fd7e14;
   transform: scale(1.1);
 }
 

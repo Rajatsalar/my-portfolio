@@ -55,8 +55,9 @@
 
 .btn {
   display: inline-block;
-  background: #007bff;
-  color: #fff;
+  border: none;
+  background: #fd7e14 !important;
+  color: #fff !important;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -64,7 +65,7 @@
 }
 
 .btn:hover {
-  background: #0056b3;
+  background: #fd7e14 !important;
   transform: scale(1.05);
 }
 
