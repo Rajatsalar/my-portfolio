@@ -1,81 +1,131 @@
+/* About Section */
 .about-section {
   padding: 60px 0;
-  background-color: #f5f5f5;
+  background: #f8f9fa;
 }
 
-/* Container max-width can be adjusted as needed */
 .container {
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
-/* Header styles */
-h3 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
   color: #333;
 }
 
-/* Image container and image styling */
-.about-image-container {
-  margin-bottom: 20px;
-}
-
-.about-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+/* Card Layout */
+.about-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
   transition: transform 0.3s ease;
 }
 
-.about-image-container:hover .about-image {
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image Container */
+.about-image-container {
+  width: 100%;
+  max-width: 350px; /* adjust to control image size */
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.about-image-container:hover {
   transform: scale(1.05);
 }
 
-/* Text content styling */
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text Content */
+.about-text {
+  text-align: center;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
 .about-text p {
   font-size: 1rem;
   line-height: 1.6;
+  margin-bottom: 20px;
   color: #555;
-  margin-bottom: 1rem;
 }
 
-/* Skills section */
+.about-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.about-text a:hover {
+  text-decoration: underline;
+}
+
+/* Skills Section */
 .about-skills {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+.about-skills h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .skills-container {
-  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skill {
-  display: inline-block;
-  padding: 5px 15px;
-  margin: 5px;
   background: #007bff;
   color: #fff;
+  padding: 5px 15px;
+  margin: 5px;
   border-radius: 20px;
   font-size: 0.9rem;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
 
 .skill:hover {
-  transform: scale(1.05);
   background: #0056b3;
+  transform: scale(1.05);
 }
 
-/* Button styling */
+/* Button Styles */
 .btn.about-me-btn {
-  margin-top: 20px;
-  text-decoration: none;
+  display: inline-block;
   padding: 10px 20px;
+  margin-top: 20px;
   background: #28a745;
   color: #fff;
-  border-radius: 4px;
-  display: inline-block;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn.about-me-btn:hover {
@@ -83,4 +133,12 @@ h3 {
   transform: translateY(-3px);
 }
 
-
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .about-text h3 {
+    font-size: 1.75rem;
+  }
+  .about-text p {
+    font-size: 0.95rem;
+  }
+}
