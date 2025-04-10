@@ -8,7 +8,7 @@ const experiences = [
     id: 1,
     company: "Avian WE",
     role: "Frontend Developer",
-    duration: "nov 2024 - till date",
+    duration: "Nov 2024 - March 2025",
     projects: [
       "Developed a dynamic dashboard",
       "Implemented responsive UI with React-Bootstrap",
@@ -16,16 +16,17 @@ const experiences = [
       "Created visually appealing layouts using CSS3, including Flexbox, Grid, animations, and media queries for responsive design.",
     ],
   },
-  // {
-  //   id: 2,
-  //   company: "XYZ Ltd",
-  //   role: "Full Stack Developer",
-  //   duration: "Mar 2020 - Dec 2021",
-  //   projects: [
-  //     "Built an e-commerce platform",
-  //     "Integrated payment gateway",
-  //   ],
-  // },
+   {
+     id: 2,
+     company: "Zoruk EV Pvt Ltd",
+     role: "Web Developer",
+     duration: "Feb 2023 - Till Date",
+     projects: [
+       "Developed and maintained the company website (zorukev.com) using HTML, CSS, and JavaScript.",
+       "Implemented regular updates and feature enhancements to ensure responsive, optimized user experiences across devices.",
+       "Collaborated with cross-functional teams to streamline processes and integrate new functionalities.",
+    ],
+   },
 ];
 
 const Experience = () => {
