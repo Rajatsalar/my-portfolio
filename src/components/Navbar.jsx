@@ -15,7 +15,7 @@ const NavBar = () => {
       <Navbar expand="lg" className="navbar-custom" fixed="top">
         <Container>
           <Navbar.Brand href="#home" className="navbar-brand-text">
-            My Portfolio
+            Rajat Salar
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
