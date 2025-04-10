@@ -76,11 +76,6 @@
 
 .about-text a {
   color: #007bff;
-  text-decoration: none;
-}
-
-.about-text a:hover {
-  text-decoration: underline;
 }
 
 /* Skills Section */
@@ -131,6 +126,7 @@
 .btn.about-me-btn:hover {
   background: #218838;
   transform: translateY(-3px);
+  text-decoration: none;
 }
 
 /* Responsive Typography */
